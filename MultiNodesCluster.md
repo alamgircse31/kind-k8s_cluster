@@ -90,6 +90,8 @@ kind create cluster --name multicrontrolworkercluster --config multicrontrolwork
 
 > [!NOTE]
 > --retain → Do NOT delete cluster nodes if cluster creation fails. We used this flag for debugging.
+<img width="1706" height="172" alt="image" src="https://github.com/user-attachments/assets/e71c07fb-41d9-4d5d-a842-558b7ca159b3" />
+
 
 ```
 kind export logs --name multicrontrolworkercluster
@@ -100,6 +102,20 @@ To save a specific location
 ```
 kind export logs --name multicrontrolworkercluster /mnt/
 ```
+
+### Debugging
+<img width="1710" height="319" alt="image" src="https://github.com/user-attachments/assets/6538360a-52c8-46b3-90ea-e6993512d26c" />
+
+Change the node labels from **node-role.kubernetes.io/control-plane=cp1** to **mydomain.io/role=control-plane**
+<img width="552" height="57" alt="image" src="https://github.com/user-attachments/assets/8ac40101-48a1-46af-b087-94ab28ae81d7" />
+
+<img width="469" height="75" alt="image" src="https://github.com/user-attachments/assets/eb2eba4d-0579-49af-8fa0-7f04e5fbaf09" />
+
+After changing, encountered with another error 
+<img width="1708" height="112" alt="image" src="https://github.com/user-attachments/assets/b88cb6cc-7040-4c36-a2dc-6a85aa758fb1" />
+
+
+
 
 
 
