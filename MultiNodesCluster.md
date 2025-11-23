@@ -75,5 +75,12 @@ nodes:
       containerPath: /var/lib/custom
 
 ```
+```
+kind create cluster --name multicrontrolworkercluster --config multicrontrolworkercluster.yaml
+```
+<img width="1705" height="212" alt="image" src="https://github.com/user-attachments/assets/3011c77e-5022-415b-af96-d67b51d557e7" />
+
+> [!NOTE]
+> This error mail comes due to Insufficient system resources. But after increasing the CPU and memory, observed the same error.
 
 
