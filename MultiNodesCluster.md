@@ -88,3 +88,13 @@ To debug the error, we run the below commands.
 kind create cluster --name multicrontrolworkercluster --config multicrontrolworkercluster.yaml --retain
 ```
 
+> [!NOTE]
+> --retain → Do NOT delete cluster nodes if cluster creation fails. We used this flag for debugging.
+
+```
+kind export logs --name multicrontrolworkercluster
+```
+
+
+
+
