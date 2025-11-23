@@ -83,4 +83,8 @@ kind create cluster --name multicrontrolworkercluster --config multicrontrolwork
 > [!NOTE]
 > This error mail comes due to Insufficient system resources. But after increasing the CPU and memory, observed the same error.
 
+To debug the error, we run the below commands. 
+```
+kind create cluster --name multicrontrolworkercluster --config multicrontrolworkercluster.yaml --retain
+```
 
