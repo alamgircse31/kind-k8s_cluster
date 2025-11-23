@@ -94,6 +94,12 @@ kind create cluster --name multicrontrolworkercluster --config multicrontrolwork
 ```
 kind export logs --name multicrontrolworkercluster
 ```
+<img width="1121" height="140" alt="image" src="https://github.com/user-attachments/assets/91af0bb2-fbfa-43fe-a365-4d7b97e54a53" />
+
+To save a specific location
+```
+kind export logs --name multicrontrolworkercluster /mnt/
+```
 
 
 
